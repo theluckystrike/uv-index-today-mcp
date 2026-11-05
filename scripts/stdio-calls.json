@@ -1,0 +1,5 @@
+[
+  ["get_uv_index_today", { "zip": "33101" }],
+  ["get_uv_index_hourly", { "city": "Phoenix", "state": "AZ" }],
+  ["explain_uv_index", { "uv_index": 7 }]
+]

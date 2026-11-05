@@ -1,0 +1,54 @@
+{
+  "name": "uv-index-today-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for today's UV Index forecast by US ZIP code or city, with hourly peak, UV Alert and EPA sun protection advice, from EPA and NWS.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/uv-index-today-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/uv-index-today-mcp"
+  },
+  "homepage": "https://www.mcpstamp.com/servers/",
+  "bin": {
+    "uv-index-today-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "npx wrangler@4 deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "uv-index",
+    "uv-index-today",
+    "uv-forecast",
+    "sun-safety",
+    "epa",
+    "nws",
+    "weather",
+    "sunscreen"
+  ]
+}
